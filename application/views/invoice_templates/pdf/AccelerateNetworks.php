@@ -48,7 +48,7 @@
     if($invoice->client_address_2) {echo $invoice->client_address_2."<br />";}
     if($invoice->client_address_1) {echo $invoice->client_address_1;}
     if($invoice->client_city && $invoice->client_state && $invoice->client_zip) {
-      echo $invoice->client_city.", ".$invoice->$client_state." ".$invoice->$client_zip;
+      echo $invoice->client_city.", ".$invoice->client_state." ".$invoice->client_zip;
     }
     ?><br />
   </blockquote>
@@ -84,7 +84,7 @@
     <b><?php echo $invoice->user_name; ?></b><br />
     <b><?php echo $invoice->user_organization; ?></b><br />
     <?php echo $invoice->user_address_1; ?><br />
-    <?php echo $invoice->user_city.", ".$invoice->$user_state." ".$invoice->$user_zip; ?><br />
+    <?php echo $invoice->user_city.", ".$invoice->user_state." ".$invoice->user_zip; ?><br />
   </blockquote>
 </div>
 </body>
