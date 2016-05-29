@@ -1,35 +1,7 @@
 <html lang="<?php echo lang('cldr'); ?>">
 <head>
   <meta charset="utf-8">
-  <style type="text/css">
-  .table th {
-    border-bottom: solid black 1px;
-    border-left: solid black 1px;
-  }
-  .table td {
-    border-left: solid black 1px;
-    padding: 2px;
-  }
-  .table {
-    border-top: solid black 1px;
-    border-right: solid black 1px;
-    border-bottom: solid black 1px;
-  }
-  .topbar td {
-    border-top: solid black 1px;
-  }
-  .right-align {
-    text-align: right;
-  }
-  h1 {
-    margin: 0px;
-  }
-  .topright {
-    position: absolute;
-    top: 2em;
-    right: 2em;
-  }
-  </style>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/AccelerateNetworks/css/pdf.css">
 </head>
 <body>
 <div class="container">
