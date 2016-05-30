@@ -19,7 +19,6 @@
     <?php
     if($invoice->client_address_1) {echo $invoice->client_address_1."<br />";}
     if($invoice->client_address_2) {echo $invoice->client_address_2."<br />";}
-    if($invoice->client_address_1) {echo $invoice->client_address_1;}
     if($invoice->client_city && $invoice->client_state && $invoice->client_zip) {
       echo $invoice->client_city.", ".$invoice->client_state." ".$invoice->client_zip;
     }
