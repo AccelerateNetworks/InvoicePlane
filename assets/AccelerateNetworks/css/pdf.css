@@ -1,18 +1,18 @@
 .table th {
-  border-bottom: solid black 1px;
-  border-left: solid black 1px;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
 }
 .table td {
-  border-left: solid black 1px;
+  border-left: 1px solid;
   padding: 2px;
 }
 .table {
-  border-top: solid black 1px;
-  border-right: solid black 1px;
-  border-bottom: solid black 1px;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
 }
 .topbar td {
-  border-top: solid black 1px;
+  border-top: 1px solid;
 }
 .right-align {
   text-align: right;
