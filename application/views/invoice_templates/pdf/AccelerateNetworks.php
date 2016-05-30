@@ -1,7 +1,8 @@
 <html lang="<?php echo lang('cldr'); ?>">
 <head>
   <meta charset="utf-8">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/AccelerateNetworks/css/pdf.css">
+  <title><?php echo lang('invoice'); ?></title>
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/AccelerateNetworks/css/pdf.css">
 </head>
 <body>
 <div class="container">
@@ -58,6 +59,15 @@
     <?php echo $invoice->user_address_1; ?><br />
     <?php echo $invoice->user_city.", ".$invoice->user_state." ".$invoice->user_zip; ?><br />
   </blockquote>
+
+<footer>
+    <?php if ($invoice->invoice_terms) : ?>
+        <div class="notes">
+            <b><?php echo lang('terms'); ?></b><br/>
+            <?php echo nl2br($invoice->invoice_terms); ?>
+        </div>
+    <?php endif; ?>
+</footer>
 </div>
 </body>
 </html>
