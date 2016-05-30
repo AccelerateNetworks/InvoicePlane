@@ -6,24 +6,30 @@
 </head>
 <body>
 <div class="container">
-  <div class="topright">
-    <table>
-      <tr><td>Invoice #</td><td><?php echo $invoice->invoice_number; ?></td></tr>
-      <tr><td>Billed</td><td><?php echo date_from_mysql($invoice->invoice_date_created, true); ?></td></tr>
-      <tr><td>Due</td><td><?php echo date_from_mysql($invoice->invoice_date_due, true); ?></td></tr>
-    </table>
-  </div>
-  <h1>Customer:</h1>
-  <blockquote>
-    <b><?php echo $invoice->client_name; ?></b><br />
-    <?php
-    if($invoice->client_address_1) {echo $invoice->client_address_1."<br />";}
-    if($invoice->client_address_2) {echo $invoice->client_address_2."<br />";}
-    if($invoice->client_city && $invoice->client_state && $invoice->client_zip) {
-      echo $invoice->client_city.", ".$invoice->client_state." ".$invoice->client_zip;
-    }
-    ?><br />
-  </blockquote>
+  <table>
+    <tr>
+      <td class="to">
+        <h1>Customer:</h1>
+        <blockquote>
+          <b><?php echo $invoice->client_name; ?></b><br />
+          <?php
+          if($invoice->client_address_1) {echo $invoice->client_address_1."<br />";}
+          if($invoice->client_address_2) {echo $invoice->client_address_2."<br />";}
+          if($invoice->client_city && $invoice->client_state && $invoice->client_zip) {
+            echo $invoice->client_city.", ".$invoice->client_state." ".$invoice->client_zip;
+          }
+          ?><br />
+        </blockquote>
+      </td>
+      <td class="right-align">
+        <table>
+          <tr><td>Invoice #</td><td><?php echo $invoice->invoice_number; ?></td></tr>
+          <tr><td>Billed</td><td><?php echo date_from_mysql($invoice->invoice_date_created, true); ?></td></tr>
+          <tr><td>Due</td><td><?php echo date_from_mysql($invoice->invoice_date_due, true); ?></td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
   <br />
   <table class="table" width="100%" border="0" cellpadding="0" cellspacing="0">
     <thead>

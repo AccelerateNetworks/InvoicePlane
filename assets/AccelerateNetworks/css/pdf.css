@@ -21,9 +21,6 @@ h1 {
   margin: 0;
 }
 
-.topright {
-  position: absolute;
-  top: 2em;
-  right: 2em;
-  width: 50px;
+.to {
+  width: 70%;
 }
