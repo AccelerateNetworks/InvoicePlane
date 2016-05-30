@@ -21,7 +21,7 @@
           ?><br />
         </blockquote>
       </td>
-      <td class="right-align">
+      <td class="invoice-metadata">
         <table>
           <tr><td>Invoice #</td><td><?php echo $invoice->invoice_number; ?></td></tr>
           <tr><td>Billed</td><td><?php echo date_from_mysql($invoice->invoice_date_created, true); ?></td></tr>
