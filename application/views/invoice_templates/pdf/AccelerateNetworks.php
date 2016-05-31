@@ -60,7 +60,7 @@
   <h1>Pay to the order of:</h1>
   <blockquote>
     <b><?php echo $invoice->user_name; ?></b><br />
-    <b><?php echo $invoice->user_organization; ?></b><br />
+    <b><?php echo $invoice->user_company; ?></b><br />
     <?php echo $invoice->user_address_1; ?><br />
     <?php echo $invoice->user_city.", ".$invoice->user_state." ".$invoice->user_zip; ?><br />
   </blockquote>
