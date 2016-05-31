@@ -24,3 +24,8 @@ h1 {
 .to {
   width: 80%
 }
+
+.description {
+  margin-left: 10px;
+  color: #999999;
+}
