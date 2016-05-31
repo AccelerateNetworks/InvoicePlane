@@ -43,7 +43,7 @@
     <tbody>
       <?php foreach ($items as $item) {  ?>
       <tr>
-        <td><?php echo $item->item_name; if(isset($item->item_description)) {?><br /><span class="description"><?php echo $item->description; ?></span><?php } ?></td>
+        <td><?php echo $item->item_name; if(isset($item->item_description)) {?><br /><span class="description"><?php echo $item->item_description; ?></span><?php } ?></td>
         <td class="right-align"><?php echo format_amount($item->item_quantity); ?></td>
         <td class="right-align"><?php echo format_currency($item->item_price); ?></td>
         <td class="right-align"><?php echo format_currency($item->item_subtotal); ?></td>
