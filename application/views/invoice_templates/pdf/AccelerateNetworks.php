@@ -49,6 +49,11 @@
         <td class="right-align"><?php echo format_currency($item->item_subtotal); ?></td>
       </tr>
       <?php } ?>
+      <tr>
+        <td>Sales Tax</td>
+        <td></td><td></td>
+        <td class="right-align"><?php echo format_currency($invoice_tax_rate->invoice_tax_rate_amount); ?></td>
+      </tr>
       <tr class="topbar">
         <td><b>Grand total</b></td>
         <td></td>
