@@ -49,11 +49,13 @@
         <td class="right-align"><?php echo format_currency($item->item_subtotal); ?></td>
       </tr>
       <?php } ?>
+      <?php foreach ($invoice_tax_rates as $invoice_tax_rate) { ?>
       <tr>
-        <td>Sales Tax</td>
+        <td><?php echo $invoice_tax_rate->invoice_tax_rate_name . ' (' . $invoice_tax_rate->invoice_tax_rate_percent . '%)'; ?></td>
         <td></td><td></td>
         <td class="right-align"><?php echo format_currency($invoice_tax_rate->invoice_tax_rate_amount); ?></td>
       </tr>
+      <?php } ?>
       <tr class="topbar">
         <td><b>Grand total</b></td>
         <td></td>
