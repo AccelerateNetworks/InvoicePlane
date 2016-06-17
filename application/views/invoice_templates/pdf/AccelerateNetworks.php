@@ -51,7 +51,7 @@
       <?php } ?>
       <?php foreach ($invoice_tax_rates as $invoice_tax_rate) { ?>
       <tr>
-        <td><?php echo $invoice_tax_rate->invoice_tax_rate_name . ' (' . $invoice_tax_rate->invoice_tax_rate_percent . '%)'; ?></td>
+        <td>Sales Tax</td>
         <td></td><td></td>
         <td class="right-align"><?php echo format_currency($invoice_tax_rate->invoice_tax_rate_amount); ?></td>
       </tr>
