@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- CSS: implied media=all -->
-    <link rel="stylesheet" href="/assets/default/css/welcome.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/invoiceplane/css/welcome.css">
     <!-- end CSS-->
 
 </head>
@@ -39,7 +39,7 @@
         </p>
 
         <div class="btn-group btn-group-justified">
-            <a href="/setup" class="btn btn-success">
+            <a href="<?php echo site_url('setup'); ?>" class="btn btn-success">
                 <i class="fa fa-cogs"></i> Setup
             </a>
             <a href="https://wiki.invoiceplane.com/" class="btn btn-info">
